@@ -14,38 +14,71 @@ I have included a .gml file for a network of coauthorships between scientists po
 Here is an example involving the coauthorship network.
 Usage:
 >>> graph = Graph.Read_GML("/Desktop/phys.gml")
->>> hgraph = PathReversal(graph)                                                
+
+>>> hgraph = PathReversal(graph)            
+
 16726
+
 >>> boxes = DensityDecomposition(hgraph)
+
 Graph is directed
+
 Graph is boxed
+
 Vertex degrees match box numbers
+
 >>> boxes[0]
+
 [462, 2869, 3832, 3568, 2499, 1589, 1018, 362, 221, 278, 28]
+
 >>> execfile('models.py')
+
 >>> modelgraph = RDDmodel(boxes[0])
+
 (28, 10)
+
 (278, 9)
+
 (221, 8)
+
 (362, 7)
+
 (1018, 6)
+
 (1589, 5)
+
 (2499, 4)
+
 (3568, 3)
+
 (3832, 2)
+
 (2869, 1)
+
 16726
+
 No paths reversed
+
 >>> modelgraph2 = HSWmodel(boxes[0],.5)
+
 (278, 9)
+
 (221, 8)
+
 (362, 7)
+
 (1018, 6)
+
 (1589, 5)
+
 (2499, 4)
+
 (3568, 3)
+
 (3832, 2)
+
 (2869, 1)
+
 >>> 
 
 For reference, the PathReversal took 6 minutes and the RDDmodel took 4.
