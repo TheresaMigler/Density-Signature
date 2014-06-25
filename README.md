@@ -5,3 +5,6 @@ Here you will find the code required to path-reverse a graph to find its density
 
 Contact: tmigler@gmail.com
 
+Information about the algorithms implemented can be found here: http://arxiv.org/abs/1405.1001
+
+The code here is written in Python, using the igraph library.
