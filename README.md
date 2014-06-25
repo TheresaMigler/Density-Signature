@@ -7,15 +7,13 @@ Contact: tmigler@gmail.com
 
 Information about the algorithms implemented can be found here: http://arxiv.org/abs/1405.1001
 
-What is included:
-
+## What is included:
 The code here is written in Python, using the igraph library. 
 density_signature.py includes the functions to find the density decomposition and density distribution. models.py includes the functions to generate random graphs using the density distribution.
 Input graphs should be in .gml format. I have included a .gml file for a network of coauthorships between scientists posting preprints on the Condensed Matter E-Print Archive between Jan 1, 1995 and December 31, 1999. This network is made available by Mark Newman here: http://www-personal.umich.edu/~mejn/netdata/
 
 
-Usage:
-
+## Usage:
 Here is an example involving the coauthorship network.
 
 >>> graph = Graph.Read_GML("/Desktop/phys.gml")
