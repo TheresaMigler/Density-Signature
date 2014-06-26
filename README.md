@@ -16,13 +16,13 @@ Input graphs should be in .gml format. I have included a .gml file for a network
 ## Usage:
 Here is an example involving the coauthorship network.
 
->>> graph = Graph.Read_GML("/Desktop/phys.gml")
+\>\>\> graph = Graph.Read_GML("/Desktop/phys.gml")
 
->>> hgraph = PathReversal(graph)            
+\>\>\> hgraph = PathReversal(graph)            
 
 16726
 
->>> boxes = DensityDecomposition(hgraph)
+\>\>\> boxes = DensityDecomposition(hgraph)
 
 Graph is directed
 
@@ -30,13 +30,11 @@ Graph is boxed
 
 Vertex degrees match box numbers
 
->>> boxes[0]
+\>\>\> boxes[0]
 
 [462, 2869, 3832, 3568, 2499, 1589, 1018, 362, 221, 278, 28]
 
->>> execfile('models.py')
-
->>> modelgraph = RDDmodel(boxes[0])
+\>\>\> modelgraph = RDDmodel(boxes[0])
 
 (28, 10)
 
