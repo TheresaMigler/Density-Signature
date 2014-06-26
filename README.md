@@ -60,7 +60,7 @@ Vertex degrees match box numbers
 
 No paths reversed
 
->>> modelgraph2 = HSWmodel(boxes[0],.5)
+\>\>\> modelgraph2 = HSWmodel(boxes[0],.5)
 
 (278, 9)
 
